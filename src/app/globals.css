@@ -1,6 +1,5 @@
 :root {
   width: auto;
-  min-width: 100px;
   --border-radius: 1px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
