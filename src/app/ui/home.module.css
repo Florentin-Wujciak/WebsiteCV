@@ -109,7 +109,7 @@
 @media screen and (max-width: 50px) {
     .iconText,
     .iconLink {
-        font-size: small; /* Ajuste la taille du texte pour les petits écrans */
+        font-size: xx-large; /* Ajuste la taille du texte pour les petits écrans */
     }
 
     .iconBox {
