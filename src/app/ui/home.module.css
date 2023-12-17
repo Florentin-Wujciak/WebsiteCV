@@ -23,6 +23,9 @@
     color: white;
     z-index: 1;
     position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+
 }
 
 .title {
