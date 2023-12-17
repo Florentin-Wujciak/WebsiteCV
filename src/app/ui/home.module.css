@@ -12,13 +12,14 @@
     margin: 0;
     font-family: Arial, sans-serif;
     position: relative;
+    overflow-x: scroll;
 }
 
 .content {
+    width: 1080px;
     background-color: #111;
     padding: 20px;
     border-radius: 20px;
-    width: 80%;
     color: white;
     z-index: 1;
     position: relative;
