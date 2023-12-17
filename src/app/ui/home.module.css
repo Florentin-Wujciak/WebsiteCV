@@ -111,4 +111,8 @@
     .iconLink {
         font-size: small; /* Ajuste la taille du texte pour les petits écrans */
     }
+
+    .iconBox {
+        max-width: 250px;
+    }
 }
