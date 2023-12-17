@@ -106,7 +106,7 @@
     align-items: center;    
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 50px) {
     .iconText,
     .iconLink {
         font-size: small; /* Ajuste la taille du texte pour les petits écrans */
