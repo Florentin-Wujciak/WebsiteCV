@@ -5,6 +5,7 @@ import styles from  './ui/home.module.css'
 export default function Home() {
   return (
     <body className={styles.body}>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <div className={styles.background}>
           <div className={styles.content}>
             
