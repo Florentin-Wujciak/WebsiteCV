@@ -1,5 +1,4 @@
 .background {
-    height: 100vh;
     width: auto;
     position: relative;
     display: flex;
@@ -7,6 +6,8 @@
     align-items: flex-start;
     padding-top: 10%;
     background-color: #000;
+    padding-bottom: 150px;
+    min-height: 100vh;
 }
 
 .body {
@@ -14,6 +15,7 @@
     font-family: Arial, sans-serif;
     position: relative;
     overflow-x: scroll;
+    background-color: #000;
 }
 
 .content {
@@ -39,7 +41,7 @@
     font-weight: normal;
 }
 
-.divider {
+.dividerHorizontal {
     position: relative;
     width: 75%;
     height: 1px;
@@ -84,12 +86,53 @@
     text-decoration-line: underline;
 }
 
-.aboutMe{
-    margin-top: 75px;
-    margin-left: 50px;
+.dividerVertical{
+    display: flex;
+    margin-bottom: 300px;
+}
+
+.leftPart, .rightPart {
+    flex: 0 0 70%; /* La partie gauche prend 70% et la partie droite prend 70% */
+    position: relative;
+    margin-top: 50px;
+}
+
+.leftPart{
+    padding-left: 50px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.rightPart{
+    padding-left: 30px;
+    
+
+}
+
+.middlePart{
+    width: 5px; /* Largeur de la barre séparatrice */
+    background-color: white; /* Couleur de la barre séparatrice */
+    align-self: stretch;
+    position: relative;
+}
+
+.middlePart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Pour placer la barre au milieu */
+    transform: translateX(-50%); /* Pour centrer la barre */
+    width: 1px; /* Largeur de la barre séparatrice */
+    background-color: white; /* Couleur de la barre séparatrice */
+  }
+
+.aboutMeTitle{
+    
     display: flex;
     align-items: center;
     gap: 10px;
+    
 }
 
 .aboutMeIcon{
@@ -102,10 +145,26 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .content {
+        margin-top: 50px;
+    }
+
     .iconBox {
         flex-direction: column;
         align-items: center;
         margin-right: 5%;
         margin-left: 5%;
+    }
+
+    .dividerVertical {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .leftPart, .rightPart {
+        flex: 0 0 70%; /* La partie gauche prend 70% et la partie droite prend 70% */
+        position: relative;
     }
 }
