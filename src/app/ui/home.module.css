@@ -92,7 +92,7 @@
 }
 
 .leftPart, .rightPart {
-    flex: 0 0 70%; /* La partie gauche prend 70% et la partie droite prend 70% */
+    flex: 0 0 70%; 
     position: relative;
     margin-top: 50px;
 }
@@ -105,13 +105,14 @@
 
 .rightPart{
     padding-left: 30px;
+    max-width: 300px;
     
 
 }
 
 .middlePart{
-    width: 5px; /* Largeur de la barre séparatrice */
-    background-color: white; /* Couleur de la barre séparatrice */
+    width: 1px;
+    background-color: white;
     align-self: stretch;
     position: relative;
 }
@@ -121,18 +122,22 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%; /* Pour placer la barre au milieu */
-    transform: translateX(-50%); /* Pour centrer la barre */
-    width: 1px; /* Largeur de la barre séparatrice */
-    background-color: white; /* Couleur de la barre séparatrice */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: white;
   }
 
-.aboutMeTitle{
+.groupTitle{
     
     display: flex;
     align-items: center;
     gap: 10px;
     
+}
+
+.aboutMeText {
+    margin-left: 50px;
 }
 
 .aboutMeIcon{
@@ -143,6 +148,28 @@
     display: flex;
     align-items: center;    
 }
+
+  .skills{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skillsItem{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skillsPic{
+    display: flex;
+  }
+
+  .skillsName{
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+
 
 @media screen and (max-width: 1000px) {
     .content {
