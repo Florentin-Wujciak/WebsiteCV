@@ -55,7 +55,7 @@ export default function Home() {
                 <br></br>
 
                 <div className={styles.aboutMeText}>
-                  <p>Passionate about IT, I am currently in the third year of BUT Informatique, and am currently looking for an internship. I have skills in Java, Python, PHP, and I am currently self-taught in C#. I would like to start my own company later, when I have gained enough experience as a developer.</p>
+                  <p>Passionate about IT, I am in the third year of my three-year university degree, and I am currently looking for an internship. I have skills in Java, Python, PHP, and I am now studying C# on my own. I would like to start my own company later, when I have gained enough experience as a developer.</p>
                 </div>
 
                 <div className={styles.dividerHorizontal}></div>
