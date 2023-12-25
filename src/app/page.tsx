@@ -71,7 +71,7 @@ export default function Home() {
 
                 <ul className={styles.list}>
                   <li className={styles.listTitle}>Three-Year university degree in IT | 2021 - Now</li>
-                  <p className={styles.listInformation}>IUT de Lens, Université d'Artois, 62300, France</p>
+                  <p className={styles.listInformation}>IUT de Lens, Université d&apos;Artois, 62300, France</p>
                   <br></br>
                   <li className={styles.listTitle}>High school diploma | 2018 - 2021</li>
                   <p className={styles.listInformation}>Speciality Mathematics, Expert mathematics option, Lycée Saint-Jean Douai, 59500, France</p>
