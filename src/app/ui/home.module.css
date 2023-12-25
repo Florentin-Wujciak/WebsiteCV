@@ -1,24 +1,27 @@
 .background {
-    height: 100vh;
+    width: auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding-top: 10%;
     background-color: #000;
+    padding-bottom: 150px;
+    min-height: 100vh;
 }
 
 .body {
     margin: 0;
     font-family: Arial, sans-serif;
     position: relative;
+    overflow-x: scroll;
+    background-color: #000;
 }
 
 .content {
+    width: 1080px;
     background-color: #111;
-    padding: 20px;
     border-radius: 20px;
-    width: 80%;
     color: white;
     z-index: 1;
     position: relative;
@@ -27,7 +30,7 @@
 .title {
     color: white;
     text-align: center;
-    margin-top: 67px;
+    margin-top: 80px;
     font-weight: bold;
 }
 
@@ -38,7 +41,7 @@
     font-weight: normal;
 }
 
-.divider {
+.dividerHorizontal {
     position: relative;
     width: 75%;
     height: 1px;
@@ -55,27 +58,167 @@
     margin-top: 5px;
 }
 
-.iconBox{
+.iconBox {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     margin-right: 15%;
     margin-left: 15%;
+    max-height: auto;
+    min-height: auto;
 }
 
-.iconText{
+.iconText {
     font-size: medium;
     margin-top: 8px;
     margin-left: 5px;
 }
 
-.iconItem{
+.iconItem {
     display: flex;
     justify-content: center;
 }
 
-.iconLink{
+.iconLink {
     font-size: medium;
     margin-top: 8px;
     margin-left: 5px;
     text-decoration-line: underline;
+}
+
+.dividerVertical {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.leftPart, .rightPart {
+    flex: 0 0 70%; 
+    position: relative;
+    margin-top: 50px;
+}
+
+.leftPart {
+    padding-left: 50px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.rightPart {
+    padding-left: 30px;
+    max-width: 300px;
+    
+
+}
+
+.middlePart {
+    width: 1px;
+    background-color: white;
+    align-self: stretch;
+    position: relative;
+}
+
+.middlePart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: white;
+  }
+
+.groupTitle {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.aboutMeText {
+    margin-left: 50px;
+}
+
+.aboutMeIcon {
+    width: 35px;
+    height: 35px;
+    background-color: #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;    
+}
+
+.list {
+    margin-left: 50px;
+}
+
+.listTitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+.listInformation {
+    font-size: small;
+}
+
+.listTitleWork {
+    font-size: large;
+    font-weight: bold;
+}
+
+.listInformationWork {
+    font-size: medium;
+}
+
+.listWork {
+    font-size: small;
+    margin-left: 30px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skillsItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillsPic {
+    display: flex;
+}
+
+.skillsName {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .content {
+        margin-top: 50px;
+    }
+
+    .iconBox {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .dividerVertical {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .leftPart, .rightPart {
+        flex: 0 0 70%; /* La partie gauche prend 70% et la partie droite prend 70% */
+        position: relative;
+    }
 }
