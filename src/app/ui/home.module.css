@@ -58,7 +58,7 @@
     margin-top: 5px;
 }
 
-.iconBox{
+.iconBox {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -68,25 +68,25 @@
     min-height: auto;
 }
 
-.iconText{
+.iconText {
     font-size: medium;
     margin-top: 8px;
     margin-left: 5px;
 }
 
-.iconItem{
+.iconItem {
     display: flex;
     justify-content: center;
 }
 
-.iconLink{
+.iconLink {
     font-size: medium;
     margin-top: 8px;
     margin-left: 5px;
     text-decoration-line: underline;
 }
 
-.dividerVertical{
+.dividerVertical {
     display: flex;
     margin-bottom: 300px;
 }
@@ -97,20 +97,20 @@
     margin-top: 50px;
 }
 
-.leftPart{
+.leftPart {
     padding-left: 50px;
     padding-right: 30px;
     text-align: justify;
 }
 
-.rightPart{
+.rightPart {
     padding-left: 30px;
     max-width: 300px;
     
 
 }
 
-.middlePart{
+.middlePart {
     width: 1px;
     background-color: white;
     align-self: stretch;
@@ -128,7 +128,7 @@
     background-color: white;
   }
 
-.groupTitle{
+.groupTitle {
     
     display: flex;
     align-items: center;
@@ -140,7 +140,7 @@
     margin-left: 50px;
 }
 
-.aboutMeIcon{
+.aboutMeIcon {
     width: 35px;
     height: 35px;
     background-color: #444;
@@ -149,25 +149,52 @@
     align-items: center;    
 }
 
-  .skills{
+.list {
+    margin-left: 50px;
+}
+
+.listTitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+.listInformation {
+    font-size: small;
+}
+
+.listTitleWork {
+    font-size: large;
+    font-weight: bold;
+}
+
+.listInformationWork {
+    font-size: medium;
+}
+
+.listWork {
+    font-size: small;
+    margin-left: 30px;
+}
+
+.skills {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
+}
 
-  .skillsItem{
+.skillsItem {
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .skillsPic{
+.skillsPic {
     display: flex;
-  }
+}
 
-  .skillsName{
+.skillsName {
     margin-left: 10px;
     margin-top: 5px;
-  }
+}
 
 
 

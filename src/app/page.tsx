@@ -36,7 +36,7 @@ export default function Home() {
               </div>
               <div className={styles.iconItem}>
                 <svg className={styles.iconGlobe} data-testid="geist-icon" fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-                <a target="_blank" title="Découvrir mes projets sur Github" href="https://github.com/Florentin-Wujciak?tab=repositories" className={styles.iconLink}>My Github repositories</a>
+                <a target="_blank" title="Look at my projects on GitHub" href="https://github.com/Florentin-Wujciak?tab=repositories" className={styles.iconLink}>My Github repositories</a>
               </div>
             </div>
 
@@ -55,19 +55,60 @@ export default function Home() {
                 <br></br>
 
                 <div className={styles.aboutMeText}>
-                  <p>Passionné par l'informatique, je suis actuellement en troisième année de BUT Informatique, et suis actuellement en recherche de stage. Je possède des compétence en Java, Python, PHP, et je me forme actuellement en autodidacte en C#. Je souhaiterai plus tard fonder mon entreprise, lorsque j'aurais acquis assez d'expérience en tant que développeur.</p>
+                  <p>Passionate about IT, I am currently in the third year of BUT Informatique, and am currently looking for an internship. I have skills in Java, Python, PHP, and I am currently self-taught in C#. I would like to start my own company later, when I have gained enough experience as a developer.</p>
                 </div>
 
                 <div className={styles.dividerHorizontal}></div>
 
                 <div className={styles.groupTitle}>
                   <div className={styles.aboutMeIcon}>
-                    <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "11px"}} height="16" width="14" viewBox="0 0 448 512"><path fill="#ffffff" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "8px"}} height="16" width="20" viewBox="0 0 640 512"><path fill="#ffffff" d="M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H256V416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z"/></svg>
                   </div>
                   <h3>Education</h3>
-
-                  
                 </div>
+
+                <br></br>
+
+                <ul className={styles.list}>
+                  <li className={styles.listTitle}>Three-Year university degree in IT | 2021 - Now</li>
+                  <p className={styles.listInformation}>IUT de Lens, Université d'Artois, 62300, France</p>
+                  <br></br>
+                  <li className={styles.listTitle}>High school diploma | 2018 - 2021</li>
+                  <p className={styles.listInformation}>Speciality Mathematics, Expert mathematics option, Lycée Saint-Jean Douai, 59500, France</p>
+                </ul>
+
+                <div className={styles.dividerHorizontal}></div>
+
+                <div className={styles.groupTitle}>
+                  <div className={styles.aboutMeIcon}>
+                    <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "9px"}} height="16" width="16" viewBox="0 0 512 512"><path fill="#ffffff" d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
+                  </div>
+                  <h3>Work experiences</h3>
+                </div>
+
+                <br></br>
+
+                <ul className={styles.list}>
+                  <li className={styles.listTitle}>Learning and testing situation</li>
+                  <br></br>
+                  <p className={styles.listInformationWork}>The learning and testing situations are companies project simulations during which I was able to carry out :</p>
+                  <br></br>
+                  <ul className={styles.listWork}>
+                    <li>Creation of a matching site in Spring and React (in progress)</li>
+                    <li>Development of a website in PHP within 48 hours in collaboration with a team of graphic designers</li>
+                    <li>Development in group of a java application with the build automation Graddle</li>
+                    <li>Creation in group of a database with PostgreSQL</li>
+                    <li>Creation in group of a static website with HTML/CSS</li>
+                  </ul>
+                  <br></br>
+                  <li className={styles.listTitle}>Internship</li>
+                  <br></br>
+                  <ul className={styles.listWork}>
+                    <li>Research project on deep learning carried out in Japan over a period of 3 months</li>
+                  </ul>
+                </ul>
+
+                <div className={styles.dividerHorizontal}></div>
 
               </div>
 
